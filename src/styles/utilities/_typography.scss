@@ -1,0 +1,162 @@
+/* ------ UTILITIES  : TYPOGRAPHY ------ */
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-blue;
+  margin: .8em auto .4em;
+}
+
+h1, h2, h3, h4 {
+  font-family: $headers-font;
+  font-weight: $font-weight-semibold;
+}
+
+h5, h6 {
+  font-weight: $font-weight-light;
+  font-family: $accent-font;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-weight: $font-weight-light;
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2.6rem;
+}
+
+h6 {
+  font-size: 2.2rem;
+  font-family: $accent-font;
+}
+
+.accent-title {
+  font-weight: $font-weight-light;
+  font-family: $accent-font;
+}
+
+
+p, a, li {
+  font-size: 1.4rem;
+}
+
+blockquote {
+  font-family: $accent-font !important;
+  color: $teal-blue;
+  font-size: 1.4rem;
+  width: 84%;
+  margin: 1em auto;
+  position: relative;
+  &:before {
+    position: absolute;
+    top: -0.6em;
+    left: -0.6em;
+    opacity: 0.2;
+    transform: rotate(8deg);
+    transform-origin: center;
+    content:"«";
+    font-size: 4rem;
+  }
+}
+
+.accent-text {
+  font-family: $accent-font;
+  font-size: 1.3rem;
+}
+
+a {
+  color: $gray-blue;
+  transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited,
+  &:focus, {
+    text-decoration: none;
+    outline: none;
+    outline-offset: 0px;
+    color: $dark-blue;
+  }
+}
+
+.text-stroked {
+  -webkit-text-stroke-width: 0.4px;
+  text-stroke-width: 0.4px;
+  -webkit-text-fill-color: white;
+  font-size: 2rem;
+
+  &.dark-blue {
+    -webkit-text-stroke-color: $dark-blue;
+    text-stroke-color: $dark-blue;
+
+  }
+}
+
+
+@media (min-width: $sm-screen) {
+} // end of sm-screen - 768px
+
+@media (min-width: $md-screen) {
+} // end of md-screen - 992px
+
+@media (min-width: $lg-screen) {
+  h1 {
+    font-size: 8rem;
+
+  }
+
+  h2 {
+    font-size: 6.4rem;
+
+  }
+
+  h3 {
+    font-size: 4.8rem;
+
+  }
+
+  h4 {
+    font-size: 3.2rem;
+
+  }
+
+  h5 {
+    font-size: 3.2rem;
+
+  }
+
+  h6 {
+    font-size: 2.8rem;
+
+  }
+
+  p, a, li {
+    font-size: 1.6rem;
+  }
+
+  .accent-text {
+    font-size: 1.5rem;
+  }
+
+  blockquote {
+    font-size: 1.6rem;
+    width: 66%;
+  }
+} // end of lg-screen - 1200px
+
+@media (min-width: $hg-screen) {
+} // end of hg-screen - 1440px
+
